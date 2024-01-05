@@ -8,6 +8,9 @@
         RegistroImage 
     } from "$lib";
 
+    import Header from "$lib/components/Header.svelte";
+    import Footer from "$lib/components/Footer.svelte";
+
     let cardOpen = 0;
 
     let contentCards = [
@@ -44,6 +47,8 @@
 
 </script>
 
+<Header />
+
 <main class="w-full min-h-screen bg-black">
 
         
@@ -72,47 +77,47 @@
         </figure>
         
         <div class="w-full">
-            <div class="px-5 sm:px-10 py-20 lg:py-10 text-center lg:text-left max-w-xl lg:max-w-full flex flex-col w-full mx-auto gap-y-6">
+            <ul class="px-5 sm:px-10 py-20 lg:py-10 text-center lg:text-left max-w-xl lg:max-w-full flex flex-col w-full mx-auto gap-y-6">
                 <h1 class="text-3xl lg:text-4xl text-white">Beneficios:</h1>
                 
-                <div class="flex flex-row items-center gap-x-4">
-                    <img src={CheckIcon} alt="Check">
+                <li class="flex flex-row items-center gap-x-4">
+                    <img class="w-6" src={CheckIcon} alt="Check">
                     <p class="text-white text-lg text-left">Crea con Facilidad: Utiliza nuestra interfaz
                         intuitiva de arrastrar y soltar para diseñar
                         formularios.
                     </p>
-                </div>
+                </li>
 
-                <div class="flex flex-row items-center gap-x-4">
-                    <img src={CheckIcon} alt="Check">
+                <li class="flex flex-row items-center gap-x-4">
+                    <img class="w-6" src={CheckIcon} alt="Check">
                     <p class="text-white text-lg text-left">Personalización: Adapta cada formulario a las
                         necesidades específicas de tu negocio.
                     </p>
-                </div>
+                </li>
 
-                <div class="flex flex-row items-center gap-x-4">
-                    <img src={CheckIcon} alt="Check">
+                <li class="flex flex-row items-center gap-x-4">
+                    <img class="w-6" src={CheckIcon} alt="Check">
                     <p class="text-white text-lg text-left">Gestión Eficiente: Organiza tus formularios
                         fácilmente y accede a ellos cuando lo necesites.
                     </p>
-                </div>
+                </li>
 
-                <div class="flex flex-row items-center gap-x-4">
-                    <img src={CheckIcon} alt="Check">
+                <li class="flex flex-row items-center gap-x-4">
+                    <img class="w-6" src={CheckIcon} alt="Check">
                     <p class="text-white text-lg text-left">Respuestas en Tiempo Real: Visualiza y gestiona
                         las respuestas de tus formularios en una sola
                         plataforma
                     </p>
-                </div>
+                </li>
 
-                <div class="flex flex-row items-center gap-x-4">
-                    <img src={CheckIcon} alt="Check">
+                <li class="flex flex-row items-center gap-x-4">
+                    <img class="w-6" src={CheckIcon} alt="Check">
                     <p class="text-white text-lg text-left">Acceso Instantáneo: Genera una URL única
                         para cada formulario y compártela con tu 
                         audiencia.
                     </p>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
 
@@ -167,9 +172,9 @@
             </div>
         </div>
 
-        <div class="w-full space-y-5">
+        <ul class="w-full space-y-5">
             {#each contentCards as card, index}
-            <div class="flex flex-col w-full">
+            <li class="flex flex-col w-full">
                 <button on:click={() => cardOpen = index} class="flex flex-col text-white bg-white/10 w-full border rounded-lg">
                     
                     <div class="flex flex-row gap-4 items-center px-2 lg:px-5 py-2">
@@ -191,9 +196,9 @@
                     </div>
 
                 </button>
-            </div>
+            </li>
             {/each}
-        </div>
+        </ul>
     </section>
 
 
@@ -211,3 +216,5 @@
     </section>
 
 </main>
+
+<Footer />

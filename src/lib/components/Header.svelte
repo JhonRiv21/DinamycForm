@@ -16,7 +16,7 @@
 
         <div class="hidden md:block">
             <a href="#s" class="text-white text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000">Crear Cuenta</a>
-            <a href="#s" class="text-white text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000">Ingresar</a>
+            <a href="/login" class="text-white text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000">Ingresar</a>
         </div>
     </div>
 </header>
