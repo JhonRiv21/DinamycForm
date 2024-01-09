@@ -56,7 +56,7 @@
             <button class="bg-green w-full py-2.5 text-white text-xl rounded-md hover:bg-green/80 duration-1000 font-bold">Iniciar sesión</button>
         </form>
 
-        <a href="#" class="text-white text-xl">¿Olvidaste tu contraseña?</a>
+        <a href="/recuperar-cuenta" class="text-white text-xl hover:text-green hover:underline duration-200">¿Olvidaste tu contraseña?</a>
 
         <hr class="border sm:w-full my-2 border-white">
 
@@ -68,7 +68,7 @@
             <p class="text-white text-lg font-medium">Inicia sesión con Google</p>
         </button>
 
-        <p class="text-white text-center text-lg mt-2 max-w-sm">¿Aún no tienes cuenta en DinamycForm? <a href="" class="text-green font-medium">¡Créala aquí!</a></p>
+        <p class="text-white text-center text-lg mt-2 max-w-sm">¿Aún no tienes cuenta en DinamycForm? <a href="/crear-cuenta" class="text-green hover:underline font-medium">¡Créala aquí!</a></p>
         
     </div>
 </main>
