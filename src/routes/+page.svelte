@@ -1,11 +1,11 @@
 <script lang="ts">
     import { 
-        BeneficiosImage,
+        BenefitsImage,
         CheckIcon, 
         DemoImage, 
         HeroImage, 
         InterrogationIcon, 
-        RegistroImage 
+        RecordImage 
     } from "$lib";
 
     import Header from "$lib/components/Header.svelte";
@@ -20,53 +20,53 @@
 
     let contentCards = [
         {
-            title: '¿Qué es DynamicForm y cómo funciona?',
-            desplegable: 'Responde a las preguntas más comunes que los usuarios puedan tener sobre DynamicForm.',
+            "title": "What is DynamicForm and how does it work?",
+            "dropdown": "Answer to the most common questions users may have about DynamicForm."
         },
         {
-            title: '¿Es realmente gratuito usar DynamicForm?',
-            desplegable: 'Responde a las preguntas más comunes que los usuarios puedan tener sobre DynamicForm.',
+            "title": "Is it really free to use DynamicForm?",
+            "dropdown": "Answer to the most common questions users may have about DynamicForm."
         },
         {
-            title: '¿Cómo puedo crear mi primer formulario?',
-            desplegable: 'Responde a las preguntas más comunes que los usuarios puedan tener sobre DynamicForm.',
+            "title": "How can I create my first form?",
+            "dropdown": "Answer to the most common questions users may have about DynamicForm."
         },
         {
-            title: '¿Qué tipos de campos y elementos puedo incluir en mis formularios?',
-            desplegable: 'Responde a las preguntas más comunes que los usuarios puedan tener sobre DynamicForm.',
+            "title": "What types of fields and elements can I include in my forms?",
+            "dropdown": "Answer to the most common questions users may have about DynamicForm."
         },
         {
-            title: '¿Cómo puedo ver y gestionar las respuestas de mis formularios?',
-            desplegable: 'Responde a las preguntas más comunes que los usuarios puedan tener sobre DynamicForm.',
+            "title": "How can I view and manage the responses to my forms?",
+            "dropdown": "Answer to the most common questions users may have about DynamicForm."
         },
         {
-            title: '¿Cómo asegura DynamicForm la seguridad y privacidad de los datos?',
-            desplegable: 'Responde a las preguntas más comunes que los usuarios puedan tener sobre DynamicForm.',
+            "title": "How does DynamicForm ensure the security and privacy of data?",
+            "dropdown": "Answer to the most common questions users may have about DynamicForm."
         },
         {
-            title: '¿Qué sucede si encuentro un problema o error en la aplicación?',
-            desplegable: 'Responde a las preguntas más comunes que los usuarios puedan tener sobre DynamicForm.',
-        },
+            "title": "What happens if I encounter a problem or bug in the application?",
+            "dropdown": "Answer to the most common questions users may have about DynamicForm."
+        }
     ]
 
 
 </script>
 
-<Header logins={true} />
+<Header logins={true} redirectUrl={'#'} />
 
-<main class="w-full min-h-screen bg-black dark:bg-gray-50">
+<main class="w-full min-h-screen bg-blackdinamyc dark:bg-whitedinamyc">
 
         
     <section class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <div class="w-full">
             <div class="px-5 sm:px-10 text-center lg:text-left py-10 flex flex-col w-full gap-y-10">
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-medium text-white dark:text-black">Bienvenido a <span class="text-green">DynamicForm</span></h1>
-                <p class="text-white dark:text-black text-2xl dark:font-medium">Tu solución para <span class="text-green">formularios inteligentes y personalizados.</span></p>
-                <p class="text-white dark:text-black text-2xl dark:font-medium">
-                    Crea, personaliza y gestiona <span class="text-green">formularios dinámicos</span> para capturar
-                 la información que <span class="text-green">tu negocio</span> necesita. 
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-medium text-whitedinamyc dark:text-blackdinamyc">Welcome to <span class="text-green">DynamicForm</span></h1>
+                <p class="text-whitedinamyc dark:text-blackdinamyc text-2xl dark:font-medium">Your solution for <span class="text-green">smart and customized forms.</span></p>
+                <p class="text-whitedinamyc dark:text-blackdinamyc text-2xl dark:font-medium">
+                    Create, customize, and manage <span class="text-green">dynamic forms</span> to capture
+                    the information <span class="text-green">your business</span> needs.
                 </p>
-                <h2 class="text-white dark:text-black text-3xl font-bold">¡Totalmente Gratuito!</h2>
+                <h2 class="text-whitedinamyc dark:text-blackdinamyc text-3xl font-bold">Completely Free!</h2>
             </div>
         </div>
 
@@ -78,49 +78,36 @@
         
     <section class="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <figure class="w-full">
-            <img class="w-full bg-cover" src={BeneficiosImage} alt="Beneficios">
+            <img class="w-full bg-cover" src={BenefitsImage} alt="Beneficios">
         </figure>
         
         <div class="w-full">
             <ul class="px-5 sm:px-10 py-20 lg:py-10 text-center lg:text-left max-w-xl lg:max-w-full flex flex-col w-full mx-auto gap-y-6">
-                <h1 class="text-3xl lg:text-4xl text-white dark:text-black dark:font-medium">Beneficios:</h1>
+                <h1 class="text-3xl lg:text-4xl text-whitedinamyc dark:text-blackdinamyc dark:font-medium">Benefits:</h1>
                 
                 <li class="flex flex-row items-center gap-x-4">
-                    <img class="w-6" src={CheckIcon} alt="Check">
-                    <p class="text-white dark:text-black text-lg text-left dark:font-medium">Crea con Facilidad: Utiliza nuestra interfaz
-                        intuitiva de arrastrar y soltar para diseñar
-                        formularios.
-                    </p>
+                    <img class="w-6" src="{CheckIcon}" alt="Check">
+                    <p class="text-whitedinamyc dark:text-blackdinamyc text-lg text-left dark:font-medium">Ease of Creation: Use our intuitive drag-and-drop interface to design forms.</p>
                 </li>
-
+            
                 <li class="flex flex-row items-center gap-x-4">
-                    <img class="w-6" src={CheckIcon} alt="Check">
-                    <p class="text-white dark:text-black text-lg text-left dark:font-medium">Personalización: Adapta cada formulario a las
-                        necesidades específicas de tu negocio.
-                    </p>
+                    <img class="w-6" src="{CheckIcon}" alt="Check">
+                    <p class="text-whitedinamyc dark:text-blackdinamyc text-lg text-left dark:font-medium">Customization: Tailor each form to your business's specific needs.</p>
                 </li>
-
+            
                 <li class="flex flex-row items-center gap-x-4">
-                    <img class="w-6" src={CheckIcon} alt="Check">
-                    <p class="text-white dark:text-black text-lg text-left dark:font-medium">Gestión Eficiente: Organiza tus formularios
-                        fácilmente y accede a ellos cuando lo necesites.
-                    </p>
+                    <img class="w-6" src="{CheckIcon}" alt="Check">
+                    <p class="text-whitedinamyc dark:text-blackdinamyc text-lg text-left dark:font-medium">Efficient Management: Easily organize your forms and access them when you need.</p>
                 </li>
-
+            
                 <li class="flex flex-row items-center gap-x-4">
-                    <img class="w-6" src={CheckIcon} alt="Check">
-                    <p class="text-white dark:text-black text-lg text-left dark:font-medium">Respuestas en Tiempo Real: Visualiza y gestiona
-                        las respuestas de tus formularios en una sola
-                        plataforma
-                    </p>
+                    <img class="w-6" src="{CheckIcon}" alt="Check">
+                    <p class="text-whitedinamyc dark:text-blackdinamyc text-lg text-left dark:font-medium">Real-time Responses: View and manage your forms' responses on a single platform.</p>
                 </li>
-
+            
                 <li class="flex flex-row items-center gap-x-4">
-                    <img class="w-6" src={CheckIcon} alt="Check">
-                    <p class="text-white dark:text-black text-lg text-left dark:font-medium">Acceso Instantáneo: Genera una URL única
-                        para cada formulario y compártela con tu 
-                        audiencia.
-                    </p>
+                    <img class="w-6" src="{CheckIcon}" alt="Check">
+                    <p class="text-whitedinamyc dark:text-blackdinamyc text-lg text-left dark:font-medium">Instant Access: Generate a unique URL for each form and share it with your audience.</p>
                 </li>
             </ul>
         </div>
@@ -130,17 +117,17 @@
     <section class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <div class="w-full">
             <div class="px-5 sm:px-10 py-20 lg:py-10 text-center lg:text-left flex flex-col w-full gap-y-10">
-                <h1 class="text-3xl lg:text-4xl font-medium text-white dark:text-black">¿Quieres ver <span class="text-green">DynamicForm</span> en acción?</h1>
-                <p class="text-white dark:text-black text-2xl dark:font-medium">
-                    Prueba nuestra demostración interactiva y descubre
-                    lo fácil que es crear formularios personalizados.
+                <h1 class="text-3xl lg:text-4xl font-medium text-whitedinamyc dark:text-blackdinamyc">Want to see <span class="text-green">DynamicForm</span> in action?</h1>
+                <p class="text-whitedinamyc dark:text-blackdinamyc text-2xl dark:font-medium">
+                    Try our interactive demo and discover
+                    how easy it is to create customized forms.
                     <br><br>
-                    ¡Sin necesidad de registro!
+                    No registration required!
                 </p>
                 
-                <a href="#s" class="text-white font-bold bg-green px-8 lg:px-16 hover:bg-green/70 duration-500 py-3 rounded-md max-w-max mx-auto text-2xl">¡Prueba ahora!</a>
+                <a href="/demo" target="_blank" class="text-whitedinamyc font-bold bg-green px-8 lg:px-16 hover:bg-green/70 duration-500 py-3 rounded-md max-w-max mx-auto text-2xl">Try it now!</a>
             </div>
-        </div>
+        </div>        
 
         <figure class="w-full">
             <img class="w-full" src={DemoImage} alt="Demo">
@@ -150,22 +137,19 @@
 
     <section class="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <figure class="w-full">
-            <img class="w-full" src={RegistroImage} alt="Registro">
+            <img class="w-full" src={RecordImage} alt="Registro">
         </figure>
 
         <div class="w-full">
             <div class="px-5 sm:px-10 py-20 lg:py-10 text-center lg:text-left flex flex-col w-full gap-y-10">
-                <h1 class="text-3xl lg:text-4xl font-medium text-white dark:text-black max-w-lg mx-auto lg:mx-0">¿Listo para llevar tus <span class="text-green">formularios</span> al siguiente nivel?</h1>
-                <p class="text-white dark:text-black text-2xl dark:font-medium">
-                    Únete a <span class="text-green">DynamicForm:</span> crea, comparte y gestiona 
-                    formularios con total <span class="text-green">seguridad.</span> Nuestra plataforma 
-                    combina <span class="text-green">flexibilidad, facilidad de uso y protección 
-                    de datos avanzada.</span> Tu información, totalmente 
-                    segura con nosotros.                    
+                <h1 class="text-3xl lg:text-4xl font-medium text-whitedinamyc dark:text-blackdinamyc max-w-lg mx-auto lg:mx-0">Ready to take your <span class="text-green">forms</span> to the next level?</h1>
+                <p class="text-whitedinamyc dark:text-blackdinamyc text-2xl dark:font-medium">
+                    Join <span class="text-green">DynamicForm:</span> a platform where you can create, share, and manage forms with ease and <span class="text-green">security.</span> Enjoy <span class="text-green">flexibility, user-friendliness</span>, and <span class="text-green">advanced data protection.</span>
                 </p>
                 
-                <a href="#s" class="text-white font-bold bg-green px-8 lg:px-16 hover:bg-green/70 duration-500 py-3 rounded-md max-w-max mx-auto text-2xl">Registrarse ahora</a>
+                <a href="#s" class="text-whitedinamyc font-bold bg-green px-8 lg:px-16 hover:bg-green/70 duration-500 py-3 rounded-md max-w-max mx-auto text-2xl">Sign Up Now</a>
             </div>
+            
         </div>
     </section>
 
@@ -173,14 +157,14 @@
     <section class="flex flex-col lg:flex-row items-start px-5 lg:px-10 py-20 justify-between w-full max-w-screen-2xl mx-auto">
         <div class="w-full">
             <div class="text-center lg:text-left flex flex-col w-full gap-y-10 pb-10">
-                <h1 class="text-3xl sm:text-4xl lg:text-6xl font-medium text-white dark:text-black max-w-md mx-auto lg:mx-0">Preguntas Frecuentes</h1>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-medium text-whitedinamyc dark:text-blackdinamyc max-w-md mx-auto lg:mx-0">Frequent questions</h1>
             </div>
         </div>
 
         <ul class="w-full space-y-5">
             {#each contentCards as card, index}
             <li class="flex flex-col w-full">
-                <button on:click={() => cardOpen = index} class="flex flex-col text-white dark:text-black bg-white/10 w-full border dark:border-black rounded-lg">
+                <button on:click={() => cardOpen = index} class="flex flex-col text-whitedinamyc dark:text-blackdinamyc bg-white/10 w-full border dark:border-blackdinamyc rounded-lg">
                     
                     <div class="flex flex-row gap-4 items-center px-2 lg:px-5 py-2">
                         <div>
@@ -204,7 +188,7 @@
                             
                             <div class="font-light dark:font-normal text-left">
                                 {#if cardOpen === index}
-                                {card.desplegable}
+                                {card.dropdown}
                                 {/if}
                             </div>
                         </div>
@@ -218,17 +202,15 @@
 
 
     <section class="flex flex-col justify-center items-center w-full px-5 pb-20 mx-auto">
-        <h1 class="text-white dark:text-black text-3xl sm:text-4xl lg:text-5xl  font-medium text-center">Información de Contacto y Soporte</h1>
-        <p class="text-white dark:text-black text-center max-w-4xl my-10 lg:text-lg">Nos encantaría escuchar tus opiniones y comentarios. Ya sean sugerencias, felicitaciones, dudas
-            o reclamos, por favor compártelos con nosotros a través de este formulario. 
-           Tu feedback es esencial para seguir mejorando.
-        </p>
-
+        <h1 class="text-whitedinamyc dark:text-blackdinamyc text-3xl sm:text-4xl lg:text-5xl font-medium text-center">Contact Information and Support</h1>
+        <p class="text-whitedinamyc dark:text-blackdinamyc text-center max-w-4xl my-10 lg:text-lg">We'd love to hear from you. Whether it's suggestions, compliments, questions, or complaints, please share them with us through this form. Your feedback is essential for our continuous improvement.</p>
+    
         <form class="flex flex-col gap-y-2 max-w-4xl w-full">
-            <textarea placeholder="Escribir" class="min-h-52 text-white dark:text-black p-2 border border-white dark:border-black bg-white/10 rounded-md"></textarea>
-            <button type="submit" class="bg-green hover:bg-green/80 duration-1000 text-2xl font-medium text-white w-full rounded-sm py-2">Enviar</button>
+            <textarea placeholder="Write here" class="min-h-52 text-whitedinamyc dark:text-blackdinamyc p-2 border border-whitedinamyc dark:border-blackdinamyc bg-white/10 rounded-md"></textarea>
+            <button type="submit" class="bg-green hover:bg-green/80 duration-1000 text-2xl font-medium text-whitedinamyc w-full rounded-sm py-2">Send</button>
         </form>
     </section>
+    
 
 </main>
 

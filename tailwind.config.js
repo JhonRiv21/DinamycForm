@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'green': '#48A05B'
+        'green': '#4b9b5c',
+        'blackdinamyc': '#0C0C0C',
+        'whitedinamyc': '#FAFAFA'
       }
     }
   },
