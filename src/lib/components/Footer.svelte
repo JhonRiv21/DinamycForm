@@ -13,8 +13,8 @@
         <h1 class="text-whitedinamyc dark:text-blackdinamyc text-3xl font-extrabold">DinamycForm</h1>
     </div>
 
-    <p class="text-whitedinamyc dark:text-blackdinamyc dark:font-medium text-sm sm:text-md text-center max-w-2xl py-5">
-        DynamicForm is a project developed by Jhon Rivero, dedicated to providing 
+    <p class="text-whitedinamyc dark:text-blackdinamyc dark:font-medium text-sm sm:text-md text-center max-w-xl py-5">
+        DynamicForm is a project dedicated to providing 
         innovative and accessible solutions for creating online forms.
     </p>
     

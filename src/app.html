@@ -9,7 +9,15 @@
 	
 		<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@1.6.0/dist/assets/form-js.css">
     	<link rel="stylesheet" href="https://unpkg.com/@bpmn-io/form-js@1.6.0/dist/assets/form-js-editor.css">
-	
+		  
+		<script>
+			(() => {
+			  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+			  if (!isDarkMode) {
+				document.documentElement.classList.add('dark');
+			  }
+			})();
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>

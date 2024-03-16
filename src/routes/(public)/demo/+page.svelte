@@ -14,6 +14,7 @@
       setTimeout(() => {
         const div = document.querySelector('.fjs-powered-by');
         if (div) {
+          //@ts-ignore
             div.style.display = 'none';
         }
         }, 100);
@@ -34,7 +35,7 @@
    
 </script>
 
-    <Header redirectUrl={'/'} />
+<Header logins={true} redirectUrl={'/'} />
   
 <div class="form-editor-container" bind:this={formContainer}></div>
   

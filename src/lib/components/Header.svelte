@@ -1,21 +1,24 @@
 <script lang="ts">
-
-    import { darkMode } from '$lib/utils/darkmode';
+    import { onMount, tick } from 'svelte';
     import { LogoDinamyc } from "$lib/index";
 
     export let logins: boolean = false;
- 
     export let redirectUrl = '#';
 
     let menuOpen = false;
     let isOn = false;
 
-    darkMode.subscribe(value => {
-        isOn = value;
+    onMount(async () => {
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        document.documentElement.classList.toggle('dark', isDarkMode);
+        isOn = isDarkMode;
+        await tick();
     });
 
-    function toggle() {
-        darkMode.update(n => !n);
+    function toggleDarkMode() {
+        const isDarkMode = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('darkMode', String(isDarkMode));
+        isOn = isDarkMode;
     }
 
     function toggleMenu() {
@@ -42,10 +45,12 @@
         <div class="hidden md:flex flex-row gap-3">
             <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">dark_mode</span>    
             <button
-                class={`w-12 h-6 flex items-center bg-gray-300 dark:bg-blackdinamyc rounded-full p-1 duration-1000 ease-in-out ${
+                class={`w-12 h-6 flex items-center ${
+                    isOn ? 'bg-blackdinamyc' : 'bg-gray-300'
+                } rounded-full p-1 duration-300 ease-in-out ${
                     isOn ? 'justify-end' : 'justify-start'
                 }`}
-                on:click={toggle}>
+                on:click={toggleDarkMode}>
                 <div class="w-4 h-4 bg-white rounded-full shadow"></div>
             </button>
             <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">brightness_7</span>
@@ -53,7 +58,7 @@
 
         {#if logins}
         <div class="hidden md:block space-x-2">
-            <a href="/crear-cuenta" class="text-whitedinamyc dark:text-blackdinamyc hover:text-whitedinamyc text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000">Sign Up</a>
+            <a href="/create-account" class="text-whitedinamyc dark:text-blackdinamyc hover:text-whitedinamyc text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000">Sign Up</a>
             <a href="/login" class="text-whitedinamyc text-xl font-extrabold bg-green rounded-md px-5 py-3 duration-1000">Sign In</a>
         </div>
         {/if}
@@ -66,17 +71,19 @@
             <div class="flex flex-row gap-3 mb-3">
                 <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">dark_mode</span>    
                 <button
-                    class={`w-12 h-6 flex items-center bg-gray-300 rounded-full p-1 duration-1000 ease-in-out ${
+                    class={`w-12 h-6 flex items-center ${
+                        isOn ? 'bg-blackdinamyc' : 'bg-gray-300'
+                    } rounded-full p-1 duration-300 ease-in-out ${
                         isOn ? 'justify-end' : 'justify-start'
                     }`}
-                    on:click={toggle}>
-                    <div class="w-4 h-4 bg-white rounded-full shadow "></div>
+                    on:click={toggleDarkMode}>
+                    <div class="w-4 h-4 bg-white rounded-full shadow"></div>
                 </button>
                 <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">brightness_7</span>
             </div>
 
             {#if logins}
-                <a href="/crear-cuenta" class="text-whitedinamyc dark:text-blackdinamyc text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000 mb-2">Sign Up</a>
+                <a href="/create-account" class="text-whitedinamyc dark:text-blackdinamyc text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000 mb-2">Sign Up</a>
                 <a href="/login" class="text-whitedinamyc dark:text-blackdinamyc text-xl font-extrabold bg-green rounded-md px-5 py-3 duration-1000">Sign In</a>
             {/if}
         </div>

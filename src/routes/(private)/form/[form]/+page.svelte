@@ -36,5 +36,14 @@
 
     <Header redirectUrl={'/home'} />
   
-<div class="form-editor-container" bind:this={formContainer}></div>
-  
+  <div class="form-editor-container lg:h-screen overflow-auto w-full" bind:this={formContainer}></div>
+
+
+
+<style>
+
+  .fjs-editor-container .fjs-form-container {
+    min-width: 400px;
+  }
+
+</style>

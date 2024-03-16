@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         'green': '#4b9b5c',
-        'blackdinamyc': '#0C0C0C',
+        'blackdinamyc': '#1C1C1C',
         'whitedinamyc': '#FAFAFA'
       }
     }

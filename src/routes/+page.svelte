@@ -55,7 +55,6 @@
 <Header logins={true} redirectUrl={'#'} />
 
 <main class="w-full min-h-screen bg-blackdinamyc dark:bg-whitedinamyc">
-
         
     <section class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <div class="w-full">
@@ -83,7 +82,7 @@
         
         <div class="w-full">
             <ul class="px-5 sm:px-10 py-20 lg:py-10 text-center lg:text-left max-w-xl lg:max-w-full flex flex-col w-full mx-auto gap-y-6">
-                <h1 class="text-3xl lg:text-4xl text-whitedinamyc dark:text-blackdinamyc dark:font-medium">Benefits:</h1>
+                <h1 class="text-3xl lg:text-4xl text-whitedinamyc dark:text-blackdinamyc dark:font-medium">Benefits</h1>
                 
                 <li class="flex flex-row items-center gap-x-4">
                     <img class="w-6" src="{CheckIcon}" alt="Check">
@@ -201,13 +200,12 @@
     </section>
 
 
-    <section class="flex flex-col justify-center items-center w-full px-5 pb-20 mx-auto">
+    <section class="flex flex-col justify-center items-center w-full px-5 pt-20 pb-32 mx-auto">
         <h1 class="text-whitedinamyc dark:text-blackdinamyc text-3xl sm:text-4xl lg:text-5xl font-medium text-center">Contact Information and Support</h1>
         <p class="text-whitedinamyc dark:text-blackdinamyc text-center max-w-4xl my-10 lg:text-lg">We'd love to hear from you. Whether it's suggestions, compliments, questions, or complaints, please share them with us through this form. Your feedback is essential for our continuous improvement.</p>
     
-        <form class="flex flex-col gap-y-2 max-w-4xl w-full">
-            <textarea placeholder="Write here" class="min-h-52 text-whitedinamyc dark:text-blackdinamyc p-2 border border-whitedinamyc dark:border-blackdinamyc bg-white/10 rounded-md"></textarea>
-            <button type="submit" class="bg-green hover:bg-green/80 duration-1000 text-2xl font-medium text-whitedinamyc w-full rounded-sm py-2">Send</button>
+        <form class="flex flex-col gap-y-2 w-full">
+            <a href="/support" class="bg-green hover:bg-green/70 duration-500 text-2xl font-medium text-whitedinamyc px-8 w-[60%] lg:w-1/3 mx-auto text-center rounded-md py-3">Click here</a>
         </form>
     </section>
     
