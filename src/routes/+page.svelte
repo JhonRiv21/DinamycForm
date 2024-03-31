@@ -77,7 +77,7 @@
         
     <section class="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <figure class="w-full">
-            <img class="w-full bg-cover" src={BenefitsImage} alt="Beneficios">
+            <img class="w-full bg-cover" src={BenefitsImage} alt="Benefits">
         </figure>
         
         <div class="w-full">
@@ -136,7 +136,7 @@
 
     <section class="flex flex-col-reverse lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <figure class="w-full">
-            <img class="w-full" src={RecordImage} alt="Registro">
+            <img class="w-full" src={RecordImage} alt="Record">
         </figure>
 
         <div class="w-full">

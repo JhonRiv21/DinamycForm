@@ -56,7 +56,7 @@ export async function load() {
 
     if (error) {
         console.error('Error cargando datos:', error);
-        return { forms: [] }; // Retorna un array vacío o maneja el error como prefieras.
+        return { forms: [] };
     }
 
     return {
