@@ -7,6 +7,7 @@ import RecordImage from '$lib/assets/landing/registro.png'
 import InterrogationIcon from '$lib/assets/landing/interrogation.svg'
 import CheckIcon from '$lib/assets/landing/check.svg'
 import GoogleIcon from '$lib/assets/google.svg'
+import DemoGif from '$lib/assets/landing/demo.gif'
 
 export {
     LogoDinamyc,
@@ -17,4 +18,5 @@ export {
     InterrogationIcon,
     CheckIcon,
     GoogleIcon,
+    DemoGif,
 }

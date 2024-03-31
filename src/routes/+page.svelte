@@ -5,7 +5,8 @@
         DemoImage, 
         HeroImage, 
         InterrogationIcon, 
-        RecordImage 
+        RecordImage,
+        DemoGif
     } from "$lib";
 
     import Header from "$lib/components/Header.svelte";
@@ -120,7 +121,7 @@
                 <p class="text-whitedinamyc dark:text-blackdinamyc text-2xl dark:font-medium">
                     Try our interactive demo and discover
                     how easy it is to create customized forms.
-                    <br><br>
+                    <br>
                     No registration required!
                 </p>
                 
@@ -129,7 +130,7 @@
         </div>        
 
         <figure class="w-full">
-            <img class="w-full" src={DemoImage} alt="Demo">
+            <img class="w-full" src={DemoGif} alt="Demo">
         </figure>
     </section>
 

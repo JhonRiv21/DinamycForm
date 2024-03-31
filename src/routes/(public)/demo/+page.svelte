@@ -36,6 +36,5 @@
 </script>
 
 <Header logins={true} redirectUrl={'/'} />
-  
-<div class="form-editor-container" bind:this={formContainer}></div>
-  
+
+<div class="form-editor-container h-screen overflow-y-auto" bind:this={formContainer}></div>
