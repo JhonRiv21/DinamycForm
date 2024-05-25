@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount, tick } from 'svelte';
     import { LogoDinamyc } from "$lib/index";
+    import { Menu, Sun, Moon } from 'lucide-svelte';
 
     export let logins: boolean = false;
     export let redirectUrl = '#';
@@ -38,12 +39,12 @@
 
         <div class="md:hidden">
             <button on:click={toggleMenu}>
-                <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">menu</span>
+                <Menu class="text-whitedinamyc dark:text-blackdinamyc" />
             </button>
         </div>
 
         <div class="hidden md:flex flex-row gap-3">
-            <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">dark_mode</span>    
+            <Moon class="text-whitedinamyc dark:text-blackdinamyc" />
             <button
                 class={`w-12 h-6 flex items-center ${
                     isOn ? 'bg-blackdinamyc' : 'bg-gray-300'
@@ -53,7 +54,7 @@
                 on:click={toggleDarkMode}>
                 <div class="w-4 h-4 bg-white rounded-full shadow"></div>
             </button>
-            <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">brightness_7</span>
+            <Sun class="text-whitedinamyc dark:text-blackdinamyc" />
         </div>
 
         {#if logins}
@@ -69,7 +70,7 @@
     <div class=" top-full right-0 border-b bg-blackdinamyc dark:bg-whitedinamyc dark:border-b dark:border-blackdinamyc text-whitedinamyc dark:text-blackdinamyc w-full z-50 md:hidden">
         <div class="flex flex-col items-center py-4">
             <div class="flex flex-row gap-3 mb-3">
-                <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">dark_mode</span>    
+                <Moon class="text-whitedinamyc dark:text-blackdinamyc" />
                 <button
                     class={`w-12 h-6 flex items-center ${
                         isOn ? 'bg-blackdinamyc' : 'bg-gray-300'
@@ -79,7 +80,7 @@
                     on:click={toggleDarkMode}>
                     <div class="w-4 h-4 bg-white rounded-full shadow"></div>
                 </button>
-                <span class="material-symbols-outlined text-whitedinamyc dark:text-blackdinamyc">brightness_7</span>
+                <Sun class="text-whitedinamyc dark:text-blackdinamyc" />
             </div>
 
             {#if logins}

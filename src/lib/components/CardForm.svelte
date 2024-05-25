@@ -1,16 +1,19 @@
 <script>
-    
+    import { Trash2, Pencil } from "lucide-svelte";
+
+    let CaptureForm = ''
+
 </script>
 
 <button on:dblclick={() => window.location.href= "/form/aaa"} class="border border-gray-300 rounded-xl bg-white card shadow-md transform hover:scale-105 duration-300">
     <div class="relative">
         <button
             class="absolute flex items-center justify-center p-2 rounded-md text-[#F3877C] right-14 hover:bg-gray-100 top-2 duration-300 hover-button">
-            <span class="material-symbols-outlined">delete</span>
+            <Trash2/>
         </button>
 
         <button on:click={() => window.location.href= "/form/aaa"} class="absolute flex items-center justify-center p-2 rounded-md text-green right-2 hover:bg-gray-100  top-2 duration-300 hover-button">
-            <span class="material-symbols-outlined">edit</span>
+            <Pencil/>
         </button>
 
         <figure class="w-auto h-36 mx-auto p-1">

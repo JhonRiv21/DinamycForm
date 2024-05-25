@@ -4,8 +4,8 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
   kit: {
     alias: {
+      assets: 'src/lib/assets.index.ts',
 			store: 'src/store',
-			assets: 'src/lib/assets.index.ts',
 			localTypes: 'src/local.d.ts'
 		},
     adapter: adapter()
