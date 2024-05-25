@@ -30,7 +30,7 @@
            Sign Up
         </h1>
 
-        <form action="?/register" method="POST" use:enhance class="flex justify-start flex-col m-auto items-start mr-auto w-full gap-y-4 mb-2">
+        <form action="?/signup" method="POST" use:enhance class="flex justify-start flex-col m-auto items-start mr-auto w-full gap-y-4 mb-2">
             
             <label class="flex flex-col justify-start items-start text-whitedinamyc dark:text-blackdinamyc text-lg w-full">Enter your email
                 <input required name="email" value="" type="email" placeholder="Insert" class="w-full bg-white/10 py-2 px-2 mt-1 border border-whitedinamyc dark:border-blackdinamyc rounded-sm">

@@ -60,7 +60,7 @@
     <section class="flex flex-col lg:flex-row items-center justify-between w-full max-w-screen-2xl mx-auto">
         <div class="w-full">
             <div class="px-5 sm:px-10 text-center lg:text-left py-10 flex flex-col w-full gap-y-10">
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-medium text-whitedinamyc dark:text-blackdinamyc">Welcome to <span class="text-green">DynamicForm</span></h1>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-whitedinamyc dark:text-blackdinamyc">Welcome to <span class="text-green">DynamicForm</span></h1>
                 <p class="text-whitedinamyc dark:text-blackdinamyc text-2xl dark:font-medium">Your solution for <span class="text-green">smart and customized forms.</span></p>
                 <p class="text-whitedinamyc dark:text-blackdinamyc text-2xl dark:font-medium">
                     Create, customize, and manage <span class="text-green">dynamic forms</span> to capture

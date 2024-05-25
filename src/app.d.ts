@@ -4,8 +4,10 @@ import { Database } from './DatabaseDefinitions'
 declare global {
   namespace App {
     interface Locals {
-      supabase: SupabaseClient<Database>
-      getSession(): Promise<Session | null>
+      supabase: SupabaseClient
+      safeGetSession: () => Promise<{ session: Session | null; user: User | null }>
+      session: Session | null
+      user: User | null
     }
     interface PageData {
       session: Session | null

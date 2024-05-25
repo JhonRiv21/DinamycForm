@@ -24,9 +24,9 @@
 
         <hr class="border sm:w-full my-2 border-whitedinamyc dark:border-blackdinamyc">
         
-        <h1 class="text-4xl font-medium text-whitedinamyc dark:text-blackdinamyc py-3 text-center">Sign in</h1>
+        <h1 class="text-4xl font-medium text-whitedinamyc dark:text-blackdinamyc py-3 text-center">Log in</h1>
 
-        <form action="" method="POST" use:enhance class="flex justify-start flex-col m-auto items-start mr-auto w-full gap-y-4 mb-2">
+        <form action="?/login" method="POST" use:enhance class="flex justify-start flex-col m-auto items-start mr-auto w-full gap-y-4 mb-2">
 
             <label class="flex flex-col justify-start items-start text-whitedinamyc dark:text-blackdinamyc text-lg w-full">Enter your email
                 <input name="email" value="" required type="email" placeholder="Insert" class="w-full bg-white/10 py-2 px-2 mt-1 border border-whitedinamyc dark:border-blackdinamyc rounded-sm">
@@ -70,12 +70,12 @@
 
         <hr class="border sm:w-full my-2 border-whitedinamyc dark:border-blackdinamyc">
 
-        <button class="w-full rounded-md flex justify-start gap-x-3 items-center bg-[#2B63F4]">
+        <button type="button" class="w-full rounded-md flex justify-start gap-x-3 items-center bg-[#2B63F4]">
             <div class="bg-white rounded-sm m-1">
                 <img src={GoogleIcon} class="p-1" alt="google">
             </div>
 
-            <p class="text-whitedinamyc text-lg font-medium">Sign in with Google</p>
+            <p class="text-whitedinamyc text-lg font-medium">Log in with Google</p>
         </button>
 
         <p class="text-whitedinamyc dark:text-blackdinamyc text-center text-lg mt-2 max-w-sm">Do you still not have a DinamycForm account? <a href="/create-account" class="text-green hover:underline font-medium">Create it here!</a></p>

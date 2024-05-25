@@ -59,7 +59,7 @@
         {#if logins}
         <div class="hidden md:block space-x-2">
             <a href="/create-account" class="text-whitedinamyc dark:text-blackdinamyc hover:text-whitedinamyc text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000">Sign Up</a>
-            <a href="/login" class="text-whitedinamyc text-xl font-extrabold bg-green rounded-md px-5 py-3 duration-1000">Sign In</a>
+            <a href="/login" class="text-whitedinamyc text-xl font-extrabold bg-green rounded-md px-5 py-3 duration-1000">Log in</a>
         </div>
         {/if}
     </div>
@@ -84,7 +84,7 @@
 
             {#if logins}
                 <a href="/create-account" class="text-whitedinamyc dark:text-blackdinamyc text-xl font-extrabold hover:bg-green rounded-md px-5 py-3 duration-1000 mb-2">Sign Up</a>
-                <a href="/login" class="text-whitedinamyc dark:text-blackdinamyc text-xl font-extrabold bg-green rounded-md px-5 py-3 duration-1000">Sign In</a>
+                <a href="/login" class="text-whitedinamyc dark:text-blackdinamyc text-xl font-extrabold bg-green rounded-md px-5 py-3 duration-1000">Log in</a>
             {/if}
         </div>
     </div>

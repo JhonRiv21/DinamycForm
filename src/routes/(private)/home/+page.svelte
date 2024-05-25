@@ -4,6 +4,12 @@
     import CaptureForm from '$lib/assets/captura-form.png'
     import { onMount } from "svelte";
 
+    interface Form {
+        id: string;
+        name: string;
+        lastEdit: string;
+    }
+
     let formsData = [
         { id: 'aaa', name: 'Form 1', lastEdit: '2023-01-01' },
     ];
@@ -12,13 +18,8 @@
     let isMounted = false;
     let modalCreateOpen = false;
 
-    interface Form {
-    id: string;
-    name: string;
-    lastEdit: string;
-}
-export let data;
-console.log(data)
+    export let data;
+    console.log(data)
 
     onMount(() => {
         isMounted = true;
